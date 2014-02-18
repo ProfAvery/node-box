@@ -1,0 +1,2 @@
+# CRLF endings confuse Linux VMs
+* text eol=lf

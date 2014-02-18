@@ -1,0 +1,1 @@
+rm ~vagrant/postinstall.sh
