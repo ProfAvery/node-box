@@ -23,7 +23,7 @@
 ### Configuring PuTTY on Windows
 
 1. See
-[Connect to Your Vagrant Virtual Machine with PuTTY](https://github.com/Varying-Vagrant-Vagrants/VVV.wiki.git)
+[Connect to Your Vagrant Virtual Machine with PuTTY](https://github.com/Varying-Vagrant-Vagrants/VVV/wiki/Connect-to-Your-Vagrant-Virtual-Machine-with-PuTTY)
 for instructions on connecting.
 2. Once you are able to connect successfully, see
 [PuTTY: How to load, save or delete server connection settings](http://kb.site5.com/shell-access-ssh/putty-how-to-load-save-or-delete-server-connection-settings/)
