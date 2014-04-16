@@ -2,10 +2,10 @@
 # vi: set ft=ruby :
 
 # Change this to BITNESS=64 for Mac OS X and 64-bit Windows or Linux
-BITNESS=32
+BITNESS=64
 
 # Change this to the amount of memory you want to allocate to your VM
-MB=512
+MB=2048
 
 VAGRANTFILE_API_VERSION = "2"
 
@@ -24,6 +24,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :virtualbox do |vb|
     vb.name = "CPSC 473"
     vb.memory = MB
+
+    # Enable GUI for troubleshooting
+    #vb.gui = true
   end
  
   config.vm.provision :shell, path: "provisioning/provision.sh"
