@@ -2,10 +2,10 @@
 # vi: set ft=ruby :
 
 # Change this to BITNESS=64 for Mac OS X and 64-bit Windows or Linux
-BITNESS=64
+BITNESS=32
 
 # Change this to the amount of memory you want to allocate to your VM
-MB=2048
+MB=512
 
 VAGRANTFILE_API_VERSION = "2"
 
