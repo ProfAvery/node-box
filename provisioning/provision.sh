@@ -1,9 +1,9 @@
 #!/bin/sh
 
 export PROVISIONING=/vagrant/provisioning
-PROVISIONED=/var/log/vagrant
+PROVISIONED=/var/log/provisioning
 
-mkdir $PROVISIONED
+mkdir -p $PROVISIONED
 
 export DEBIAN_FRONTEND=noninteractive
 export DEBIAN_PRIORITY=critical
@@ -14,4 +14,3 @@ for script in $PROVISIONING/scripts/*.sh; do
     echo $scriptname
     . $script 2>&1 | tee $PROVISIONED/$scriptname.log
 done
-

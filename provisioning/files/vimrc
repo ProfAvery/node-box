@@ -1,20 +1,23 @@
 source $VIMRUNTIME/vimrc_example.vim
 
 set autoindent
-set smartindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-set shiftround
-set smarttab
-set matchpairs+=<:>
-set foldmethod=marker
-set showmatch
-set number
-set nobackup
 set autowrite
+set colorcolumn=80
+set expandtab
+set foldmethod=marker
+set hlsearch
+set matchpairs+=<:>
 set mouse-=a
+set nobackup
+set number
+set shiftround
+set shiftwidth=4
+set showmatch
+set smartcase
+set smartindent
+set smarttab
+set softtabstop=4
+set tabstop=4
 
 match ErrorMsg /\t/
 
@@ -22,12 +25,10 @@ nmap j gj
 nmap k gk
 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'pangloss/vim-javascript'
-Bundle 'git://github.com/kien/ctrlp.vim.git'
+Plugin 'VundleVim/Vundle.vim'
 
+call vundle#end()
 filetype plugin indent on
-

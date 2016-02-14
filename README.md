@@ -13,8 +13,8 @@
     - GUI: Click the *Clone in Desktop* button on the GitHub page
     - Command-Line: `git clone https://github.com/ProfAvery/node-box.git`
 6. *(Optionally)* Edit `Vagrantfile`
-    - Change `BITNESS` to 64 if you have a 64-bit machine
-    - Increase `MB` to 1024 if your machine has enough free memory
+    - Change `BITNESS` to 32 if you have a 32-bit machine
+    - Set `vb.memory` explicitly if you don't want to use 1/4 of the available RAM
 7. `vagrant up` *(This may take a while)*
 8. Log in
     - Mac and linux: `vagrant ssh` (UNIX)
@@ -57,4 +57,3 @@ or
 If you want to destroy and re-build the machine completely, run
     vagrant destroy
 but make sure that any data you want to save has been copied to `~vagrant/shared` first
-
