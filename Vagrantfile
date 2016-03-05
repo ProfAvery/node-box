@@ -1,15 +1,12 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-# Change this to BITNESS=64 for Mac OS X and 64-bit Windows or Linux
-BITNESS=64
-
 VAGRANTFILE_API_VERSION = "2"
 UBUNTU_CODENAME = "trusty"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
-  config.vm.box = "ubuntu/#{UBUNTU_CODENAME}#{BITNESS}"
+  config.vm.box = "ubuntu/#{UBUNTU_CODENAME}64"
 
   config.vm.box_check_update = true
 
