@@ -24,6 +24,7 @@
 ### Troubleshooting VirtualBox
 - You may need to [enable VT-x/AMD-V](http://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/)
 - On Windows, make sure that the Hyper-V feature is not installed.
+- On Windows 10, see [Issue #6754](https://github.com/mitchellh/vagrant/issues/6754)
 
 ### If you want to use PuTTY on Windows
 
