@@ -9,7 +9,7 @@
     - Mac: [Download](https://git-scm.com/download/mac) or install via [Homebrew](http://brew.sh/)
     - Linux: `sudo apt-get install git` or `sudo yum install git`
     - *(Optionally)* install [GitHub Desktop](https://desktop.github.com/) on Windows or Mac
-4. Open a shell prompt (on Windows, use Git Bash).
+4. Open a shell prompt (on Windows, use Git Bash.  You will probably need to right-click and choose `Run as Administrator`).
 5. Clone this repository
     - Command-Line: `git clone https://github.com/ProfAvery/node-box.git`
     - via GitHub Desktop: Click the *Clone in Desktop* button on the GitHub page

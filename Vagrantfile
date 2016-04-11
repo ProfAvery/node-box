@@ -38,6 +38,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Enable GUI for troubleshooting
     #vb.gui = true
+
+    # Allow symlinks on Windows.
+    # Thanks to Skyler Lister Aley for finding this.
+    # References:
+    #   http://www.sureshjoshi.com/development/installing-nodejs-vagrant-windows/
+    #   http://www.ahtik.com/blog/fixing-your-virtualbox-shared-folder-symlink-error/
+    vb.customize [
+        'setextradata',
+        :id, 'VBoxInternal2/SharedFoldersEnableSymlinksCreate/vagrant',
+        '1'
+    ]
+
   end
 
   # Fix spurious error message per https://github.com/mitchellh/vagrant/issues/1673
