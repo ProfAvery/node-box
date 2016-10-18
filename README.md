@@ -48,9 +48,9 @@ to save your connection information.
 
 Host port | Guest port
 --------- | ----------
-2222      | 22
-8000      | 80
 3000      | 3000
+4040      | 4040
+8000      | 80
 8080      | 8080
 
 ## Shutting down
@@ -59,7 +59,7 @@ When you are finished, you can stop the machine by running
     vagrant suspend
 or
     vagrant halt
-    
+
 If you want to destroy and re-build the machine completely, run
     vagrant destroy
 but make sure that any data you want to save has been copied to `~vagrant/shared` first
