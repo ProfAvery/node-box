@@ -1,5 +1,4 @@
-NGROK_VERSION=2.0.19
-HUB_ZIPFILE=ngrok_${NGROK_VERSION}_linux_amd64.zip
-https://dl.ngrok.com/ngrok_2.0.19_linux_amd64.zip
-sudo -u vagrant -i sh -c "cd /home/vagrant/download && curl -s -L -O https://dl.ngrok.com/$HUB_ZIPFILE"
-sudo -u vagrant -i sh -c "cd /home/vagrant/bin && unzip /home/vagrant/download/$HUB_ZIPFILE"
+NGROK_ZIPFILE=ngrok-stable-linux-amd64.zip
+NGROK_URL="https://bin.equinox.io/c/4VmDzA7iaHb/$NGROK_ZIPFILE"
+sudo -u vagrant -i sh -c "cd /home/vagrant/download && curl -s -L -O $NGROK_URL"
+sudo -u vagrant -i sh -c "cd /home/vagrant/bin && unzip /home/vagrant/download/$NGROK_ZIPFILE"
