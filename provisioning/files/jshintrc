@@ -5,7 +5,7 @@
     "undef": true,
     "quotmark": "single",
     "maxlen": 80,
-    "trailing": true
+    "trailing": true,
     "curly": true,
     "eqeqeq": true,
     "forin": true,
