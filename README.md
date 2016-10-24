@@ -20,7 +20,6 @@
 8. If installation was successful, you should see `all 13 tests passed`.
 9. Log in with `vagrant ssh`
 
-
 ### Troubleshooting VirtualBox
 - You may need to [enable VT-x/AMD-V](http://www.howtogeek.com/213795/how-to-enable-intel-vt-x-in-your-computers-bios-or-uefi-firmware/)
 - On Windows, make sure that the Hyper-V feature is not installed.
@@ -53,13 +52,49 @@ Host port | Guest port
 8000      | 80
 8080      | 8080
 
+## Starting NoSQL databases
+
+Redis and MongoDB servers and command-line clients are installed but
+not configured to start automatically.
+
+### Redis
+
+Open a new ssh session and run
+
+```shell
+$HOME/redis/src/redis-server
+```
+
+### MongoDB
+
+Open a new ssh session and run
+
+```shell
+mkdir -p $HOME/mongodb/data
+$HOME/mongodb/bin/mongod --dbpath=$HOME/mongodb/data
+```
+
 ## Shutting down
 
-When you are finished, you can stop the machine by running
+To stop Redis or MongoDB, press Ctrl-C in the terminal window where the
+database is running.
+
+When you are finished, you can stop the VM by running
+
+```shell
     vagrant suspend
+```
+
 or
+
+```shell
     vagrant halt
+```
 
 If you want to destroy and re-build the machine completely, run
+
+```shell
     vagrant destroy
+```
+
 but make sure that any data you want to save has been copied to `~vagrant/shared` first
