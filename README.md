@@ -70,7 +70,6 @@ $HOME/redis/src/redis-server
 Open a new ssh session and run
 
 ```shell
-mkdir -p $HOME/mongodb/data
 $HOME/mongodb/bin/mongod --dbpath=$HOME/mongodb/data
 ```
 
